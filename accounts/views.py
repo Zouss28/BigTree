@@ -15,6 +15,7 @@ def login_view(request):
         'form':form,
         'title':'Login',
         'btn_label':'Login',
+        'reg':True
     })
     
 def logout_view(request):    

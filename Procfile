@@ -1,1 +1,1 @@
-web: gunicorn linktree.wsgi –log-file -
+web: gunicorn linktree.wsgi
