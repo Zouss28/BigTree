@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div class="row d-flex align-items-center " style="height: 100vh;">
+            <div class="col-md-5 mx-auto">
+                    <div class="card rounded-cirlce cards" style="border: 5px solid rgb(68, 64, 64);">
+                        <div class="top_box p-4 ">
+                            <h1 class="display-4 text-center">{{ title }}</h1>
+                        </div>
+                        <div class="card-body">
+                            {% include "form.html" with form=form btn_label=btn_label %}
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

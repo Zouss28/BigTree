@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row d-flex align-items-center " style="height: 100vh;">
+        <div class="col-md-5 mx-auto">
+                <div class="card rounded-cirlce cards" style="border: 5px solid rgb(68, 64, 64);">
+                    <div class="top_box p-4 ">
+                        <h1 class="display-4 text-center">Delete</h1>
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="POST">
+                            {%csrf_token%}
+                            <h3>Are You Sure You want to Delete</h3>
+                            <input class="btn btn-danger" type="submit" name="Confirm" value="Confirm">
+                            <a class="btn btn-warning" href="{%url 'Dashboard'%}">Cancel</a>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

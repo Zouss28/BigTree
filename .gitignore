@@ -1,0 +1,66 @@
+# Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db.sqlite3
+*.log
+
+# Virtual environment
+venv/
+.env
+pipenv.lock
+
+# React
+/node_modules/
+/build/
+.DS_Store
+
+# IDE and text editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Compiled Python bytecode
+*.pyc
+
+# Local development settings
+*.env
+
+# Dependency directories
+.idea/
+node_modules/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs and databases
+*.log
+*.db
+*.sqlite3
+
+
+# Secret keys and sensitive information
+*.secret
+*.key
+*.conf
+
+# Caches and compiled code
+__pycache__/
+*.pyc
+*.pyo
+
+# Docker
+docker-compose.override.yml
+.env
+
+# Visual Studio Code settings
+.vscode/
