@@ -13,8 +13,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 from decouple import config
-import django_on_heroku
-import dj_database_url
+import django_heroku
+# import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,12 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bigtree-4d1923dfd86d.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['bigtree-6ed1eae74740.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -87,11 +87,10 @@ WSGI_APPLICATION = "linktree.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dag7jm6hno2jn9', 
-        'USER': 'eftmuaxlphxcza', 
-        'PASSWORD': '04d73a4c9a6aaf9dfa2904ed662b80973a24d4d7369902186fb3364d1fd0eb31',
-        'HOST': 'ec2-34-236-199-229.compute-1.amazonaws.com',
-        'PORT':'5432'
+        'NAME': 'zouss', 
+        'USER': 'zouss', 
+        'PASSWORD': 'A1anj0n53',
+        'HOST': 'localhost',
     }
 }
 
@@ -136,5 +135,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 LOGIN_URL = 'login'
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-django_on_heroku.settings(locals()) 
+django_heroku.settings(locals())
 
