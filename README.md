@@ -20,7 +20,7 @@ This repository contains a Linktree clone implemented in Django, a versatile web
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/BigTree.git
+   git clone https://github.com/Zouss28/BigTree.git
    ```
 
 2. Change to the project directory:
